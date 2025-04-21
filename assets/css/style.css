@@ -393,7 +393,11 @@
   }
 
   .home__info{
-    
+    margin-top: 4rem;
+  }
+
+  .home__description{
+    text-align: center;
   }
 
 
