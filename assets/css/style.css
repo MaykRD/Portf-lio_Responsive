@@ -297,6 +297,11 @@
     top: 0;
   }
 
+  /* =========SHADOW HEADER========== */
+  .shadow-header{
+    box-shadow: 0 1px 16px hsla(0, 0%, 0% , .12);
+  }
+
   
 
 
@@ -398,7 +403,64 @@
 
   .home__description{
     text-align: center;
+    color: var(--title-color);
+    margin-bottom: 1.5rem;
   }
+  
+  .home__description b{
+    background: linear-gradient(90deg,
+              hsla(10, 98%, 50%, .3), 
+              hsla(14, 98%, 50%, .0));
+  }
+
+  .home__scroll{
+    display: block;
+    width: max-content;
+    margin: 0 auto; 
+  }
+
+  .home__scroll-text{
+    display: none;  
+  }
+
+  .home__scroll-box{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color .4s;
+  }
+
+  .home__scroll-box i{
+    animation: scroll-down 3s infinite;
+  }
+
+
+  /* Animação-Icon-Scroll */
+
+@keyframes scroll-down{
+  0%{
+    transform: translatey(-1rem); 
+    opacity: 0;
+  }
+  50%{
+    transform: translatey(0);
+    opacity: 1;
+  }
+  100%{
+  transform: translatey(.6rem);
+  opacity: 0; 
+  }
+ }    
+
+
+
+
 
 
 
